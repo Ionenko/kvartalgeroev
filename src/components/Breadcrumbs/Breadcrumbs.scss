@@ -1,0 +1,81 @@
+@import "../../styles/variables";
+
+.breadcrumbs {
+	font-size: 0;
+	margin: 0 0 30px;
+
+	&__element {
+		display: inline;
+		text-decoration: none;;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 22px;
+		font-family: $acromFont;
+		font-style: normal;
+		color: $pink;
+	}
+
+	&__item {
+		display: inline;
+
+		&:before {
+			content: '-';
+			display: inline-block;
+			margin: 0 5px;
+			color: $pink;
+			font-size: initial;
+			font-weight: inherit;
+			line-height: inherit;
+		}
+
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
+
+
+		a {
+			transition: color .3s;
+
+			&:hover {
+				text-decoration: underline;
+				color: #ffffff;
+			}
+		}
+
+		& > span {
+			text-decoration: none;
+			color: $pink;
+			pointer-events: none;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 1599px) {
+	.breadcrumbs {
+		margin: 0 0 20px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.breadcrumbs {
+		&-element {
+			font-size: 14px;
+		}
+	}
+}
+
+@media only screen and (max-width: 766px) {
+	.breadcrumbs {
+
+		&-container {
+			margin: 10px 0 0;
+		}
+
+		&-element {
+			font-size: 12px;
+		}
+	}
+}

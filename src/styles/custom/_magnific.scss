@@ -1,0 +1,333 @@
+.popup {
+	position: relative;
+	transform: scale(0);
+	opacity: 0;
+	transition: transform .8s, opacity .4s;
+	margin: auto auto 30px;
+
+	&_lg {
+		max-width: none;
+
+		.popup__content {
+			padding: 60px 40px 15px;
+
+			&:before {
+				width: 33.333%;
+			}
+		}
+	}
+
+	&_sm {
+		max-width: 560px;
+
+		.popup__content {
+			padding: 80px 50px;
+
+			&:before {
+				width: 76%;
+			}
+		}
+
+		.form {
+			&__body {
+				max-width: 360px;
+				margin: auto;
+			}
+		}
+	}
+
+	&_md {
+		max-width: 1060px;
+
+		.popup__content {
+			padding: 60px 45px;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	&_wide {
+		max-width: 1520px;
+
+		.popup__content {
+			&:before {
+				display: none;
+			}
+		}
+
+		button.mfp-close {
+			right: 40px;
+			top: 48px;
+			opacity: 1;
+			color: $darkBlue;
+
+			[class^="icon-"], [class*=" icon-"] {
+				color: inherit;
+			}
+
+			&:active {
+				top: 48px;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 30px;
+		color: $darkBlue;
+		margin: 0 0 40px;
+		font-weight: 500;
+		text-align: center;
+
+		&_pink {
+			color: $pink;
+		}
+	}
+
+	&__message {
+		font-size: 25px;
+		font-weight: 500;
+		color: $darkBlue;
+		text-align: center;
+		margin: 30px 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__content {
+		background: #ffffff;
+		position: relative;
+		margin: auto;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: -15px;
+			height: 15px;
+			width: 33.3333%;
+			background: $green;
+		}
+
+		.irs--round {
+			.irs-line {
+				background: $gray;
+			}
+		}
+	}
+
+	&__panorama {
+		position: relative;
+		height: 0;
+		padding: 0 0 40%;
+		margin: 0 0 15px;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+	}
+
+	&__gallery {
+		.filters {
+			.filters__list {
+				text-align: center;
+			}
+
+			.filters__element {
+				background: none;
+
+				&_active {
+					background: $pink;
+				}
+			}
+		}
+
+		.section {
+			&_gallery {
+				&-facing {
+					.gallery-slider {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.gallery {
+
+			.slick-arrow {
+				background: $pink;
+			}
+
+			.slick-dots {
+				display: none !important;
+			}
+
+			&__container {
+				padding-bottom: 0;
+			}
+
+			&__item {
+				&__description {
+					bottom: 0;
+				}
+			}
+
+			&__panel {
+				&__filters {
+					.filters__element {
+						&:not(.filters__element_active) {
+							background: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__actions {
+		margin: 15px 0;
+
+		.btn {
+			margin: auto;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.tabs {
+		&__nav {
+			margin: 0 0 50px;
+
+			&__item {
+				margin: 0;
+
+				&:not(.active){
+					text-decoration: none;
+				}
+			}
+
+			.btn {
+				text-transform: unset;
+				text-decoration: none;
+				font-size: 25px;
+				padding: 25px 35px;
+			}
+		}
+	}
+
+	.table {
+		&-block {
+			overflow: auto;
+			margin-top: 60px;
+		}
+
+		thead {
+			vertical-align: middle;
+
+			td {
+				white-space: unset;
+				padding-top: unset;
+			}
+		}
+
+		tbody {
+			td {
+				white-space: nowrap;
+
+				&:last-child {
+					white-space: unset;
+				}
+			}
+		}
+
+		td {
+			padding: 0 20px;
+		}
+	}
+}
+
+.mfp-bg {
+	background: #1d1761;
+	transition: all .6s;
+	opacity: 0;
+
+	&.mfp-ready {
+		opacity: 0.8;
+
+		&.mfp-removing {
+			opacity: 0;
+		}
+	}
+}
+
+.mfp-container {
+	padding: 30px 30px;
+}
+
+button.mfp-close {
+	font-size: 0;
+	top: 20px;
+	right: 20px;
+	opacity: 1;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	transition: .3s transform;
+
+	[class^="icon-"], [class*=" icon-"] {
+		font-size: 24px;
+		color: $pink;
+		line-height: inherit;
+		pointer-events: none;
+	}
+
+	&:active {
+		top: 20px;
+	}
+
+	@media screen and (min-width: 992px) {
+		&:hover {
+			transform: scale(1.18);
+		}
+	}
+
+}
+
+.mfp-ready {
+	.popup {
+		transform: scale(1);
+		opacity: 1;
+		transition: transform .8s, opacity .4s;
+	}
+}
+
+.mfp-removing {
+	.popup {
+		transform: scale(0);
+		opacity: 0;
+		transition: transform .8s, opacity .4s;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	button.mfp-close {
+	}
+
+	.mfp-container {
+	}
+}

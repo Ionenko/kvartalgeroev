@@ -1,0 +1,194 @@
+.selectboxit {
+
+	&-container {
+		width: 100%;
+
+		* {
+			font-size: 15px;
+			font-weight: 400;
+			color: $darkBlue;
+			font-family: $acromFont;
+		}
+
+		span, a {
+			height: 35px;
+			line-height: 35px;
+		}
+
+		.selectboxit {
+			width: 100%;
+			border: 0 none;
+			outline: 0 none;
+			padding: 0 35px 0 15px;
+			border-radius: 0;
+
+			&-options {
+				border-radius: 0;
+				max-height: 360px;
+				left: -1px;
+				right: -1px;
+				padding: 0;
+			}
+
+			&-open {
+				.selectboxit-default-arrow {
+					transform: translateY(-50%) rotate(-180deg);
+				}
+			}
+
+
+		}
+	}
+
+	.selectboxit {
+		&-option {
+			&-icon {
+				&-container {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	
+	&-btn {
+		background: #ffffff;
+
+		&.selectboxit-enabled {
+			&:hover, &:focus, &:active {
+				background: #ffffff;
+			}
+		}
+	}
+
+	&-text {
+		font-size: 15px;
+		font-weight: 500;
+		color: $darkBlue;
+		text-indent: unset;
+	}
+
+	&-default {
+		&-arrow {
+			border-top-width: 8px;
+			border-left-width: 4px;
+			border-right-width: 4px;
+			border-top-color: $pink;
+			transform: translateY(-50%);
+			transition: all .3s;
+		}
+	}
+
+	&-option {
+		text-indent: unset;
+		
+		&-last {
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		&-first {
+			border-top-right-radius: 0;
+			border-top-left-radius: 0;
+		}
+		
+		span, a {
+			height: auto;
+			line-height: normal;
+		}
+		
+		&:before, &:after {
+			display: none;
+		}
+
+		&.selectboxit-selected {
+			.selectboxit-option-anchor {
+				font-weight: 500;
+			}
+		}
+	}
+
+	&-list {
+		border-color: $lightGray;
+
+		& > .selectboxit-focus {
+			& > .selectboxit-option-anchor {
+				color: $darkBlue;
+				background: #f1f1f1;
+			}
+		}
+
+		.selectboxit-option-anchor {
+			color: $darkBlue;
+		}
+
+		.selectboxit-option {
+			.selectboxit-option-anchor {
+				padding: 10px 15px;
+				height: auto;
+				line-height: normal;
+			}
+
+			span, a {
+				height: auto;
+				line-height: normal;
+			}
+		}
+	}
+
+	&-arrow {
+		&-container {
+			width: 35px;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 766px) {
+	.selectboxit {
+		&-container {
+			span, a {
+				height: 44px;
+				line-height: 44px;
+			}
+
+			* {
+				font-size: 17px;
+			}
+
+			.selectboxit {
+
+				&-options {
+				}
+			}
+		}
+
+		&-text {
+			font-size: 17px;
+			font-weight: 700;
+			max-width: 100%;
+		}
+
+		&-default {
+			&-arrow {
+				border-top-width: 10px;
+				border-left-width: 6px;
+				border-right-width: 6px;
+			}
+		}
+
+		&-list {
+			.selectboxit-option {
+				.selectboxit-option-anchor {
+					height: auto;
+					line-height: normal;
+				}
+
+				span, a {
+					height: auto;
+					line-height: normal;
+					white-space: pre-wrap;
+				}
+			}
+		}
+	}
+}

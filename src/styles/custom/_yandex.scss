@@ -1,0 +1,162 @@
+.ymaps-layers-pane {
+	filter: url(https://www.majas-lapu-izstrade.lv/cross-browser-grayscale-ie11/js/filters.svg#grayscale);
+	filter: gray;
+	-webkit-filter: grayscale(100%);
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+	filter: url(https://www.majas-lapu-izstrade.lv/cross-browser-grayscale-ie11/js/filters.svg#grayscale);
+	filter: gray;-webkit-filter: grayscale(100%);
+}
+[class*="default-cluster"] {
+	font-family: $acromFont !important;
+	font-size: 2.9vmin!important;
+	font-weight: 400 !important;
+	color:#fff;
+}
+
+.popover {
+	position:absolute;
+	min-width:150px;
+	max-width:200px;
+	padding: 20px 0;
+	font-family: $acromFont;
+	font-weight: 400;
+	text-align:center;
+	white-space:normal;
+	background-color:#fff;
+	-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	box-shadow:0 5px 10px rgba(0,0,0,0.2);
+
+	&.top{
+		margin-top:-35px;
+
+		.arrow{
+			bottom:-11px;
+			left:50%;
+			margin-left:-11px;
+			border-top-color:#999;
+			border-top-color:rgba(0,0,0,0.25);
+			border-bottom-width:0;
+
+			&:after{
+				bottom: 1px;
+				margin-left:-10px;
+				border-top-color:#fff;
+				border-bottom-width:0;
+			}
+		}
+	}
+	&.right{
+		margin-left:10px;
+
+		.arrow{
+			top:50%;
+			left:-11px;
+			margin-top:-11px;
+			border-right-color:#999;
+			border-right-color:rgba(0,0,0,0.25);
+			border-left-width:0;
+
+			&:after{
+				bottom:-10px;
+				left:1px;
+				border-right-color:#fff;
+				border-left-width:0;
+			}
+		}
+	}
+	&.bottom{
+		margin-top:10px;
+
+		.arrow{
+			top:-11px;
+			left:50%;
+			margin-left:-11px;
+			border-bottom-color:#999;
+			border-bottom-color:rgba(0,0,0,0.25);
+			border-top-width:0;
+
+			&:after{
+				top:1px;
+				margin-left:-10px;
+				border-bottom-color:#fff;
+				border-top-width:0;
+			}
+		}
+
+	}
+	&.left{
+		margin-left:-10px;
+
+		.arrow{
+			top:50%;
+			right:-11px;
+			margin-top:-11px;
+			border-left-color:#999;
+			border-left-color:rgba(0,0,0,0.25);
+			border-right-width:0;
+
+			&:after{
+				right:1px;
+				bottom:-10px;
+				border-left-color:#fff;
+				border-right-width:0;
+			}
+		}
+	}
+
+	.close{
+		position:absolute;
+		right:5px;
+		top:1px;
+		float:right;
+		font-size: 24px;
+		font-weight:700;
+		line-height:20px;
+		border: none;
+		color:#000;
+		opacity:.2;
+		filter:alpha(opacity=20);text-decoration:none;
+	}
+
+	&-title{
+		padding:8px 14px;
+		margin:0;
+		font-size:14px;
+		font-weight:400;
+		line-height:18px;
+		background-color:#f7f7f7;
+		border-bottom:1px solid #ebebeb;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+		border-radius:5px 5px 0 0;
+
+		&:empty{
+			display:none;
+		}
+	}
+
+	&-content{
+		padding: 0 20px;
+	}
+
+	.arrow, .arrow:after{
+		position:absolute;
+		display:block;
+		width:0;
+		height:0;
+		border-color:transparent;
+		border-style: solid;
+	}
+
+	.arrow{
+		border-width:11px;
+
+		&:after{
+			border-width:10px;
+			content:"";
+		}
+	}
+}

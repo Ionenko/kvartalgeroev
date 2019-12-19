@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+.tabs {
+	&__nav {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+
+		&__item {
+			margin: 0 30px 0 0;
+			cursor: pointer;
+			font-weight: 500;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			&:not(.tabs__nav__active){
+				color: $pink;
+				text-decoration: underline;
+				font-weight: 400;
+				transition: all .3s;
+
+				.btn {
+					color: $darkBlue;
+				}
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			&.active {
+				color: $darkBlue;
+				font-weight: 500;
+				text-decoration: none;
+
+				.btn {
+					background: $pink;
+					color: #ffffff;
+				}
+			}
+
+			.filters__label {
+				color: inherit;
+				text-decoration: inherit;
+				font-weight: inherit;
+				cursor: inherit;
+			}
+
+			.btn {
+				color: inherit;
+				width: auto;
+				min-width: unset;
+				max-width: none;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__container {
+
+	}
+
+	&__tab {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 766px) {
+
+}

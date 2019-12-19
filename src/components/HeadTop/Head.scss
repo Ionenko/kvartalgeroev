@@ -1,0 +1,192 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.head {
+	background: $darkBlue;
+	padding: 112px 0 0;
+	position: relative;
+	z-index: 2;
+
+	&__content {
+		padding: 30px 0;
+	}
+
+	&__title {
+		margin: 0 0 10px;
+		color: #ffffff;
+		font-weight: 700;
+		font-size: 100px;
+		line-height: 1;
+		@include letterspacing(-50);
+		vertical-align: top;
+
+		&__section {
+			display: inline-block;
+			line-height: inherit;
+			vertical-align: top;
+		}
+
+		&__category {
+			display: inline-block;
+			font-size: 50px;
+			color: $pink;
+			line-height: inherit;
+			vertical-align: top;
+		}
+
+		.fadeInLeftBig {
+			animation-duration: 0.66s;
+		}
+
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.head__title {
+			width: 100%;
+		}
+
+		.head__actions {
+			width: 610px;
+			flex-shrink: 0;
+		}
+
+		.head__links {
+			.link {
+				white-space: nowrap;
+				font-size: 15px;
+				color: #ffffff;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__actions {
+		padding-left: 15px;
+
+		&_outside {
+			position: absolute;
+			bottom: -39px;
+			right: 0;
+			left: 0;
+			padding: 0;
+
+			.btn {
+				float: right;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1599px) {
+	.head {
+		&__title {
+			font-size: 72px;
+
+			&__category {
+				font-size: 42px;
+			}
+		}
+
+		&__top {
+			justify-content: space-between;
+
+			.head__title {
+				width: auto;
+			}
+
+			.head__actions {
+				width: auto;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.head {
+		&__title {
+			font-size: 58px;
+
+			&__category {
+				font-size: 38px;
+			}
+		}
+
+		&__actions {
+			.btn {
+				max-width: 230px;
+				min-width: unset;
+				width: 100%;
+				line-height: 16px;
+				padding: 20px 20px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.head {
+		$head: &;
+
+		&__title {
+			font-size: 48px;
+
+			&__category {
+				font-size: 28px;
+			}
+		}
+
+		&__top {
+			display: block;
+
+			#{$head} {
+				&__title {
+					width: 100%;
+					max-width: none;
+				}
+
+				&__links {
+					display: none;
+				}
+			}
+		}
+
+		&__actions {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 766px) {
+	.head {
+		padding: 64px 0 0;
+
+		&__title {
+			font-size: 38px;
+			text-align: center;
+
+			&_sm {
+				font-size: 30px;
+			}
+
+			&__category {
+				display: none;
+			}
+		}
+
+		&__content {
+			padding: 50px 0;
+		}
+
+		.breadcrumbs {
+			display: none;
+		}
+
+		.navigation {
+			display: none;
+		}
+	}
+}

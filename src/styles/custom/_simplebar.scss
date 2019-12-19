@@ -1,0 +1,32 @@
+.simplebar {
+	padding: 0 0 10px;
+
+	&-track {
+		&.simplebar-horizontal {
+			.simplebar-scrollbar {
+				height: 16px;
+			}
+		}
+
+
+		.simplebar-scrollbar {
+			&.simplebar-visible {
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+
+	&-scrollbar {
+		&:before {
+			background: $darkBlue;
+			border-radius: 1px;
+		}
+	}
+
+	.filters__list {
+		white-space: nowrap;
+	}
+}

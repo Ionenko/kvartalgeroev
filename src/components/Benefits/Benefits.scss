@@ -1,0 +1,328 @@
+@import "../../styles/variables";
+
+.benefits {
+
+	font-size: 0;
+	padding: 0 40px;
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.slick {
+		&-arrow {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__item {
+		width: 20%;
+		display: inline-block;
+		text-align: center;
+		padding-top: 216px;
+		position: relative;
+
+		&:nth-child(1) {
+			.benefits__img {
+				img {
+					width: 83px;
+					height: 83px;
+				}
+			}
+
+			.benefits__circle {
+				left: -72px;
+			}
+		}
+		&:nth-child(2) {
+			.benefits__img {
+				img {
+					width: 115px;
+					height: 82px;
+				}
+			}
+
+			.benefits__circle {
+				left: auto;
+				right: -64px;
+			}
+		}
+		&:nth-child(3) {
+			.benefits__img {
+				img {
+					width: 82px;
+					height: 85px;
+				}
+			}
+
+			.benefits__circle {
+				left: auto;
+				right: -64px;
+			}
+		}
+		&:nth-child(4) {
+			.benefits__img {
+				img {
+					width: 114px;
+					height: 79px;
+				}
+			}
+
+			.benefits__circle {
+				left: auto;
+				right: -64px;
+			}
+		}
+		&:nth-child(5) {
+			.benefits__img {
+				img {
+					width: 114px;
+					height: 89px;
+				}
+			}
+
+			.benefits__circle {
+				left: auto;
+				right: -64px;
+			}
+		}
+	}
+
+	&__img {
+		position: absolute;
+		top: 76px;
+		left: 50%;
+		transform: translateX(-50%);
+		right: auto;
+		margin: auto;
+	}
+
+	&__circle {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		width: 144px;
+		height: 144px;
+		background: #ebebf0;
+		border-radius: 50%;
+		z-index: -1;
+		transition: transform 0.5s;
+	}
+
+	&__text {
+		font-size: 17px;
+		line-height: normal;
+		font-weight: 400;
+		color: $darkBlue;
+	}
+}
+
+@media only screen and (max-width: 1599px) {
+	.benefits {
+		padding: 0 0;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.benefits {
+		&__item {
+			padding-top: 180px;
+
+			&:nth-child(1) {
+				.benefits__img {
+					img {
+						width: 73px;
+						height: 73px;
+					}
+				}
+
+				.benefits__circle {
+					left: -62px;
+				}
+			}
+			&:nth-child(2) {
+				.benefits__img {
+					img {
+						width: 105px;
+						height: 74px;
+					}
+				}
+
+				.benefits__circle {
+					right: -54px;
+				}
+			}
+			&:nth-child(3) {
+				.benefits__img {
+					img {
+						width: 72px;
+						height: 74px;
+					}
+				}
+
+				.benefits__circle {
+					right: -54px;
+				}
+			}
+			&:nth-child(4) {
+				.benefits__img {
+					img {
+						width: 104px;
+						height: 72px;
+					}
+				}
+
+				.benefits__circle {
+					right: -54px;
+				}
+			}
+			&:nth-child(5) {
+				.benefits__img {
+					img {
+						width: 104px;
+						height: 81px;
+					}
+				}
+
+				.benefits__circle {
+					right: -54px;
+				}
+			}
+		}
+
+		&__text {
+			font-size: 15px;
+		}
+
+		&__circle {
+			width: 124px;
+			height: 124px;
+			top: -20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.benefits {
+		padding: 0 30px;
+
+		position: relative;
+
+		&__row {
+			display: block;
+		}
+
+		.slick {
+			&-prev {
+				left: -30px;
+			}
+
+			&-next {
+				right: -30px;
+			}
+		}
+
+		&__item {
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 164px;
+		}
+
+		&__circle {
+			top: -52px;
+		}
+	}
+}
+
+@media only screen and (max-width: 766px) {
+	.benefits {
+		padding: 0 0;
+
+
+		&__item {
+			width: auto;
+			padding-top: 216px;
+
+			&:nth-child(1) {
+				.benefits__img {
+					img {
+						width: 83px;
+						height: 83px;
+					}
+				}
+
+				.benefits__circle {
+					left: -72px;
+				}
+			}
+			&:nth-child(2) {
+				.benefits__img {
+					img {
+						width: 115px;
+						height: 82px;
+					}
+				}
+
+				.benefits__circle {
+					right: -64px;
+				}
+			}
+			&:nth-child(3) {
+				.benefits__img {
+					img {
+						width: 82px;
+						height: 85px;
+					}
+				}
+
+				.benefits__circle {
+					right: -64px;
+				}
+			}
+			&:nth-child(4) {
+				.benefits__img {
+					img {
+						width: 114px;
+						height: 79px;
+					}
+				}
+
+				.benefits__circle {
+					right: -64px;
+				}
+			}
+			&:nth-child(5) {
+				.benefits__img {
+					img {
+						width: 114px;
+						height: 89px;
+					}
+				}
+
+				.benefits__circle {
+					right: -64px;
+				}
+			}
+		}
+
+		&__circle {
+			top: -30px;
+			width: 144px;
+			height: 144px;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: normal;
+		}
+
+		.slick {
+			&-dots {
+				margin-top: 20px;
+			}
+		}
+	}
+}

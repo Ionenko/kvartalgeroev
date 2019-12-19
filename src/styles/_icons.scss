@@ -1,0 +1,97 @@
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&:before {
+		color: inherit !important;
+	}
+}
+
+.icon-arrow-left:before {
+	content: "\e913";
+}
+.icon-arrow-right:before {
+	content: "\e914";
+}
+.icon-chevron-left:before {
+	content: "\e903";
+}
+.icon-chevron-right:before {
+	content: "\e904";
+}
+.icon-facebook:before {
+	content: "\e90f";
+	color: $darkBlue;
+}
+.icon-instagram:before {
+	content: "\e910";
+	color: $darkBlue;
+}
+.icon-twitter:before {
+	content: "\e911";
+	color: $darkBlue;
+}
+.icon-vk:before {
+	content: "\e912";
+	color: $darkBlue;
+}
+
+.icon-ball:before {
+	content: "\e900";
+	color: #ed1944;
+}
+.icon-basket:before {
+	content: "\e901";
+	color: #ed1944;
+}
+.icon-books:before {
+	content: "\e902";
+	color: #ed1944;
+}
+.icon-coins:before {
+	content: "\e905";
+	color: #ed1944;
+}
+.icon-cup:before {
+	content: "\e906";
+	color: #ed1944;
+}
+.icon-lips:before {
+	content: "\e907";
+	color: #ed1944;
+}
+.icon-park:before {
+	content: "\e908";
+	color: #ed1944;
+}
+.icon-pharmacy:before {
+	content: "\e909";
+	color: #ed1944;
+}
+.icon-plus:before {
+	content: "\e90a";
+	color: #ed1944;
+}
+.icon-pointer:before {
+	content: "\e90b";
+	color: #ed1944;
+}
+.icon-pointers:before {
+	content: "\e90c";
+	color: #ed1944;
+}
+.icon-sportsman:before {
+	content: "\e90d";
+	color: #ed1944;
+}
+.icon-times:before {
+	content: "\e90e";
+	color: #fff;
+}

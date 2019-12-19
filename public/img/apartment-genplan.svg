@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740px" height="326px" viewBox="0 0 740 326">
+    <title>apartment-section</title>
+    <path d="M73.817,76.077H9.173V10.136H163.162V76.077H97.952L85.81,88.209"
+          style="fill:none;stroke:#3c4266;stroke-miterlimit:10;stroke-width:12px;fill-rule:evenodd"/>
+    <path d="M324.234,76.077H256.013L243.491,88.589M229.366,76.077H197.605V10.136H386.791V76.077H348.368L335.776,88.659"
+          style="fill:none;stroke:#3c4266;stroke-miterlimit:10;stroke-width:12px;fill-rule:evenodd"/>
+    <path d="M492.007,76.077H418.343V10.136H572.332V76.077h-56.19L504.053,88.156"
+          style="fill:none;stroke:#3c4266;stroke-miterlimit:10;stroke-width:12px;fill-rule:evenodd"/>
+    <polyline
+            points="634.138 76.077 609.541 76.077 609.541 10.136 727.391 10.136 727.391 115.642 669.628 115.642 669.628 93.41 684.941 93.41 684.941 76.077 658.274 76.077 645.849 88.492"
+            style="fill:none;stroke:#3c4266;stroke-miterlimit:10;stroke-width:12px;fill-rule:evenodd"/>
+    <polyline points="529.844 256.484 529.844 205.741 516.729 192.636"
+              style="fill:none;stroke:#3c4266;stroke-miterlimit:10;stroke-width:12px;fill-rule:evenodd"/>
+    <polyline
+            points="529.844 181.625 529.844 166.51 514.508 166.51 514.508 144.154 529.844 144.154 529.844 144.028 572.332 144.028 572.332 316.855 571.956 316.855 571.956 317.608 514.508 317.608 514.508 295.377 529.844 295.377 529.844 280.599 517.253 268.018"
+            style="fill:none;stroke:#3c4266;stroke-miterlimit:10;stroke-width:12px;fill-rule:evenodd"/>
+    <polyline points="684.964 256.484 684.964 205.741 671.849 192.636"
+              style="fill:none;stroke:#3c4266;stroke-miterlimit:10;stroke-width:12px;fill-rule:evenodd"/>
+    <polyline
+            points="684.964 181.625 684.964 166.51 669.628 166.51 669.628 144.154 684.964 144.154 684.964 144.028 727.453 144.028 727.453 316.855 727.076 316.855 727.076 317.608 669.628 317.608 669.628 295.377 684.964 295.377 684.964 280.599 672.373 268.018"
+            style="fill:none;stroke:#3c4266;stroke-miterlimit:10;stroke-width:12px;fill-rule:evenodd"/>
+</svg>

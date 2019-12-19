@@ -1,0 +1,88 @@
+@import "../../styles/variables";
+
+.sorting {
+	margin: 0 0 40px;
+
+	&__row {
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		padding: 0 20px 0 0;
+		font-size: 15px;
+		font-weight: 500;
+		color: $darkBlue;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+		position: relative;
+		font-size: 15px;
+		font-weight: 700;
+		color: $darkBlue;
+		cursor: pointer;
+		padding: 0 30px 0 0;
+		transition: color .3s;
+		margin: 0 20px 0 0;
+
+		&:hover {
+			color: $pink;
+		}
+
+		&__arrows {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			display: inline-block;
+			width: 16px;
+			text-align: center;
+
+			&:before, &:after {
+				content: '';
+				display: inline-block;
+				width: 0;
+				height: 0;
+				border-left: 4px solid rgba(181, 179, 203, 0);
+				border-right: 4px solid rgba(181, 179, 203, 0);
+			}
+
+			&:before {
+				border-bottom: 8px solid rgba(181, 179, 203, 1);
+			}
+
+			&:after {
+				border-top: 8px solid rgba(181, 179, 203, 1);
+			}
+		}
+
+		&.asc {
+
+			.sorting__link__arrows {
+				&:after {
+					display: none;
+				}
+
+				&:before {
+					border-bottom-color: $pink;
+				}
+			}
+		}
+
+		&.desc {
+			.sorting__link__arrows {
+				&:before {
+					display: none;
+				}
+
+				&:after {
+					border-top-color: $pink;
+				}
+			}
+		}
+	}
+}
