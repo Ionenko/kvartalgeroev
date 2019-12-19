@@ -25,7 +25,7 @@ const Menu = ({toggleMenu, visibleMenu}) => {
                         <div className="container">
                             <div className="menu__content">
                                 <div className="menu__logo">
-                                    <Link className="logo" to="/kvartalgeroev">
+                                    <Link className="logo" to="/">
                                         <img src={logoIcon} alt="logo" />
                                     </Link>
                                 </div>
@@ -65,13 +65,13 @@ const Menu = ({toggleMenu, visibleMenu}) => {
                                         </div>
                                         <div className="menu__links">
                                             <div className="menu__links__item">
-                                                <Link to="./kvartalgeroev">Генплан</Link>
+                                                <Link to="/">Генплан</Link>
                                             </div>
                                             <div className="menu__links__item">
                                                 <Link to="/apartments">Список свободных квартир</Link>
                                             </div>
                                             <div className="menu__links__item">
-                                                <Link to="./kvartalgeroev">Отделка</Link>
+                                                <Link to="/">Отделка</Link>
                                             </div>
                                         </div>
                                     </div>

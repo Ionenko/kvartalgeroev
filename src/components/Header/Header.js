@@ -21,7 +21,7 @@ const Header = ({isScrolled, isSmall, toggleMenu}) => {
                 <div className="container">
                     <div className="header__row">
                         <div className="header__logo">
-                            <Link className="logo" to="/kvartalgeroev">
+                            <Link className="logo" to="/">
                                 <img src={logoIcon} alt="logo"/>
                             </Link>
                         </div>
