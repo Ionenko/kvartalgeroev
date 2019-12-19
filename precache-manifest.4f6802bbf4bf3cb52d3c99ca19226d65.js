@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ffe56105bc0f5479d3ba3a72215da019",
+    "revision": "83c5472f1e2128db94fe146b8127d71d",
     "url": "/kvartalgeroev/index.html"
   },
   {
-    "revision": "331c19650f9e1c24c5b7",
+    "revision": "d77eeb3fb773d4e33926",
     "url": "/kvartalgeroev/static/css/main.488cb3b4.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kvartalgeroev/static/js/2.c2c36ead.chunk.js"
   },
   {
-    "revision": "331c19650f9e1c24c5b7",
-    "url": "/kvartalgeroev/static/js/main.52a4d5ec.chunk.js"
+    "revision": "d77eeb3fb773d4e33926",
+    "url": "/kvartalgeroev/static/js/main.28b0b2d5.chunk.js"
   },
   {
     "revision": "4cef6fdf2f8077c31e35",
