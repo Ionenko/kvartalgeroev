@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/kvartalgeroev/static/css/main.0c2284a9.chunk.css",
-    "main.js": "/kvartalgeroev/static/js/main.28b0b2d5.chunk.js",
-    "main.js.map": "/kvartalgeroev/static/js/main.28b0b2d5.chunk.js.map",
+    "main.js": "/kvartalgeroev/static/js/main.9a565d45.chunk.js",
+    "main.js.map": "/kvartalgeroev/static/js/main.9a565d45.chunk.js.map",
     "runtime-main.js": "/kvartalgeroev/static/js/runtime-main.e273c7df.js",
     "runtime-main.js.map": "/kvartalgeroev/static/js/runtime-main.e273c7df.js.map",
     "static/js/2.c2c36ead.chunk.js": "/kvartalgeroev/static/js/2.c2c36ead.chunk.js",
     "static/js/2.c2c36ead.chunk.js.map": "/kvartalgeroev/static/js/2.c2c36ead.chunk.js.map",
     "index.html": "/kvartalgeroev/index.html",
-    "precache-manifest.5cf4c7b4fde696d8c91d049d5fe9db96.js": "/kvartalgeroev/precache-manifest.5cf4c7b4fde696d8c91d049d5fe9db96.js",
+    "precache-manifest.47b5431aa7e34b7474fdb21462701167.js": "/kvartalgeroev/precache-manifest.47b5431aa7e34b7474fdb21462701167.js",
     "service-worker.js": "/kvartalgeroev/service-worker.js",
     "static/css/main.0c2284a9.chunk.css.map": "/kvartalgeroev/static/css/main.0c2284a9.chunk.css.map",
     "static/media/Loader.scss": "/kvartalgeroev/static/media/9.32353ede.svg",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.e273c7df.js",
     "static/js/2.c2c36ead.chunk.js",
     "static/css/main.0c2284a9.chunk.css",
-    "static/js/main.28b0b2d5.chunk.js"
+    "static/js/main.9a565d45.chunk.js"
   ]
 }
