@@ -25,7 +25,6 @@ const fetchApartments = () => (dispatch) =>{
     dispatch(apartmentsRequested());
 
     apartmentsApi.getAll().then(({data}) => {
-        console.log(data);
         dispatch(apartmentsLoaded(data));
     }).catch((error) => {
         dispatch(apartmentsError(error))

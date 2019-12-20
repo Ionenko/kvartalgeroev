@@ -21,10 +21,10 @@ const ApartmentsRow = (props) => {
         rooms_count
     } = props;
 
-    let history, {location} = useHistory();
+    let history = useHistory();
 
     const handleClick = () => {
-        history.push(location.pathname + id)
+        history.push(history.location.pathname.replace(/\/+$/, "") + `/${id}`)
     };
 
     return (

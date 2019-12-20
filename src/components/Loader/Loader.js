@@ -35,7 +35,7 @@ const Loader = ({animationComplete}) => {
                 stagger: {
                     amount: 4
                 }
-            },"start+=.2")
+            },"start+=.2");
         tl.to(overlayFirst, {duration: 2, ease: "power2.inOut", y: "-100%"});
         tl.to(overlaySecond, {duration: 2, ease: "power2.inOut", y: "-100%", delay: -1.6});
 

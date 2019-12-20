@@ -7,7 +7,7 @@ import PagesLayout from "../Layouts/PagesLayout";
 
 class App extends Component {
     state = {
-        loading: false,
+        loading: true,
         isScrolled: 0,
         visibleMenu: false
     };

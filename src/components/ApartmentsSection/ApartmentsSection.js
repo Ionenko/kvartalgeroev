@@ -40,7 +40,6 @@ class ApartmentsSection extends Component {
 
     componentDidMount() {
         this.props.fetchApartments();
-        console.log('componentDidMount')
     }
 
     componentDidCatch(error, errorInfo) {

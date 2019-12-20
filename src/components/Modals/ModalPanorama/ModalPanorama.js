@@ -24,7 +24,6 @@ const TransitionsModal = () => {
 
     const handleOpen = () => {
         setOpen(true);
-        console.log('open modal');
     };
 
     const handleClose = () => {
