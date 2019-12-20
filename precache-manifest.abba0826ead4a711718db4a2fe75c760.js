@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7036175dbe82b7ade8dad698798f79e",
+    "revision": "776853f7c3ff3f02efca5c7e946e591f",
     "url": "/kvartalgeroev/index.html"
   },
   {
-    "revision": "18acf264521cfe4a3430",
-    "url": "/kvartalgeroev/static/css/main.0c2284a9.chunk.css"
+    "revision": "71bcad8e76925b51df4f",
+    "url": "/kvartalgeroev/static/css/main.61759a02.chunk.css"
   },
   {
     "revision": "7836916409727646a65d",
     "url": "/kvartalgeroev/static/js/2.c2c36ead.chunk.js"
   },
   {
-    "revision": "18acf264521cfe4a3430",
-    "url": "/kvartalgeroev/static/js/main.9a565d45.chunk.js"
+    "revision": "71bcad8e76925b51df4f",
+    "url": "/kvartalgeroev/static/js/main.ae0f171e.chunk.js"
   },
   {
     "revision": "4cef6fdf2f8077c31e35",
