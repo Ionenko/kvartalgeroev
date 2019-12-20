@@ -34,7 +34,7 @@ const ApartmentItem = (props) => {
                     </p>
                 </div>
                 <div className="apartments__item__img">
-                    <img src={planImg} alt="" />
+                    <img src={process.env.PUBLIC_URL + planImg} alt="" />
                 </div>
                 <div className="apartments__features">
                     <div className="apartments__features__item">

@@ -71,13 +71,13 @@ const  ApartmentsItemPopover = (props) => {
                               <div className="apartments__item middle">
                                   <div className="apartments__item__left">
                                       <div className="apartments__item__img">
-                                          <img src={planImg} alt={`Планировка ${floor}`}/>
+                                          <img src={process.env.PUBLIC_URL + planImg} alt={`Планировка ${floor}`}/>
                                       </div>
                                   </div>
                                   <div className="apartment__info">
                                       <div className="apartment__info__item">
                                           <div className="apartment__info__img">
-                                              <img src={floorImg} alt={`Этаж ${floor}`}/>
+                                              <img src={process.env.PUBLIC_URL + floorImg} alt={`Этаж ${floor}`}/>
                                           </div>
                                           <div className="apartment__info__text">
                                              <span>
@@ -87,7 +87,7 @@ const  ApartmentsItemPopover = (props) => {
                                       </div>
                                       <div className="apartment__info__item">
                                           <div className="apartment__info__img">
-                                              <img src={buildingImg} alt={`Корпус ${building}`}/>
+                                              <img src={process.env.PUBLIC_URL + buildingImg} alt={`Корпус ${building}`}/>
                                           </div>
                                           <div className="apartment__info__text">
                                               <span>
